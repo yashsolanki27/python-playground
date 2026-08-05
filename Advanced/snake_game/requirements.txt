@@ -1,0 +1,4 @@
+# Snake Game - Dependencies
+# This game uses only Python standard library
+# No external packages required
+# Note: For graphical version, install pygame: pip install pygame
