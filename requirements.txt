@@ -1,0 +1,20 @@
+# Python Learning Games - Requirements
+# Most games use only Python standard library
+
+# Core Requirements
+# No external dependencies for beginner games
+
+# Intermediate Games
+# No external dependencies required
+
+# Advanced Games
+# pygame>=2.0.0  # Uncomment for Snake Game
+# colorama>=0.4.4  # Uncomment for colored terminal output
+
+# Development Dependencies
+# pytest>=7.0.0  # Uncomment for testing
+# black>=22.0.0  # Uncomment for code formatting
+# flake8>=4.0.0  # Uncomment for linting
+
+# Note: Most games in this project use only Python standard library
+# Install specific dependencies as needed for advanced games
