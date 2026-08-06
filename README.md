@@ -3,8 +3,8 @@
 A collection of interactive Python games designed to teach programming fundamentals through hands-on practice.
 
 ## Overview
-This project contains 9 Python games organized into three difficulty levels:
-- **Beginner** (3 games): Core Python concepts
+This project contains 12 Python games organized into three difficulty levels:
+- **Beginner** (6 games): Core Python concepts
 - **Intermediate** (3 games): Data structures and logic
 - **Advanced** (3 games): OOP and complex programming
 
@@ -16,6 +16,9 @@ This project contains 9 Python games organized into three difficulty levels:
 | Number Guessing | Guess a random number | Variables, loops, conditionals |
 | Rock Paper Scissors | Classic hand game | If-else, random module |
 | Calculator | Basic arithmetic | Functions, error handling |
+| Dice Rolling | Virtual dice with ASCII art | Random, lists, statistics |
+| Word Scramble | Unscramble letters | String manipulation, lists |
+| Password Generator | Secure password creation | secrets module, security |
 
 ### Intermediate Level
 | Game | Description | Concepts Learned |
@@ -63,16 +66,19 @@ python game.py
 1. **Number Guessing Game** - Learn variables, loops, conditionals
 2. **Rock Paper Scissors** - Master if-else statements
 3. **Calculator** - Understand functions and error handling
+4. **Dice Rolling Simulator** - Practice random module and statistics
+5. **Word Scramble** - Work with strings and lists
+6. **Password Generator** - Learn about security and the secrets module
 
 ### Phase 2: Intermediate
-4. **Hangman** - Work with lists and strings
-5. **Tic-Tac-Toe** - Implement 2D data structures
-6. **Quiz Game** - Use dictionaries and score systems
+7. **Hangman** - Work with lists and strings
+8. **Tic-Tac-Toe** - Implement 2D data structures
+9. **Quiz Game** - Use dictionaries and score systems
 
 ### Phase 3: Advanced
-7. **Blackjack** - Apply object-oriented programming
-8. **Snake Game** - Create graphical games with pygame
-9. **Inventory System** - Build data persistence systems
+10. **Blackjack** - Apply object-oriented programming
+11. **Snake Game** - Create graphical games with pygame
+12. **Inventory System** - Build data persistence systems
 
 ## Project Structure
 ```
@@ -84,8 +90,20 @@ Basics_games/
 ├── .gitignore             # Git ignore rules
 ├── requirements.txt       # Dependencies
 ├── Beginner/              # Beginner games
+│   ├── number_guessing/
+│   ├── rock_paper_scissors/
+│   ├── calculator/
+│   ├── dice_rolling/
+│   ├── word_scramble/
+│   └── password_generator/
 ├── Intermediate/          # Intermediate games
+│   ├── hangman/
+│   ├── tic_tac_toe/
+│   └── quiz_game/
 └── Advanced/              # Advanced games
+    ├── blackjack/
+    ├── snake_game/
+    └── inventory_system/
 ```
 
 ## Contributing
