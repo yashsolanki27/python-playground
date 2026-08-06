@@ -1,0 +1,3 @@
+# Rock Paper Scissors Game - Dependencies
+# This game uses only Python standard library
+# No external packages required
