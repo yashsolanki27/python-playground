@@ -22,7 +22,22 @@ Basics_games/
 │   │   ├── game.py
 │   │   └── requirements.txt
 │   │
-│   └── calculator/              # Functions, arithmetic ops
+│   ├── calculator/              # Functions, arithmetic ops
+│   │   ├── README.md
+│   │   ├── game.py
+│   │   └── requirements.txt
+│   │
+│   ├── dice_rolling/            # Random, lists, ASCII art
+│   │   ├── README.md
+│   │   ├── game.py
+│   │   └── requirements.txt
+│   │
+│   ├── word_scramble/           # String manipulation, lists
+│   │   ├── README.md
+│   │   ├── game.py
+│   │   └── requirements.txt
+│   │
+│   └── password_generator/      # Secrets module, security
 │       ├── README.md
 │       ├── game.py
 │       └── requirements.txt
@@ -43,21 +58,24 @@ Basics_games/
 │       ├── game.py
 │       └── requirements.txt
 │
-└── Advanced/                    # Level 3: OOP & Complex Logic
-    ├── blackjack/               # OOP, complex game rules
-    │   ├── README.md
-    │   ├── game.py
-    │   └── requirements.txt
-    │
-    ├── snake_game/              # OOP, pygame, animations
-    │   ├── README.md
-    │   ├── game.py
-    │   └── requirements.txt
-    │
-    └── inventory_system/        # OOP, file persistence
-        ├── README.md
-        ├── game.py
-        └── requirements.txt
+├── Advanced/                    # Level 3: OOP & Complex Logic
+│   ├── blackjack/               # OOP, complex game rules
+│   │   ├── README.md
+│   │   ├── game.py
+│   │   └── requirements.txt
+│   │
+│   ├── snake_game/              # OOP, pygame, animations
+│   │   ├── README.md
+│   │   ├── game.py
+│   │   └── requirements.txt
+│   │
+│   └── inventory_system/        # OOP, file persistence
+│       ├── README.md
+│       ├── game.py
+│       └── requirements.txt
+│
+└── tests/                       # Unit tests
+    └── test_beginner_games.py
 ```
 
 ## Game Complexity Progression
@@ -68,6 +86,9 @@ Basics_games/
 | Number Guessing | Variables, loops, conditionals, random | ⭐ | 50-80 |
 | Rock Paper Scissors | If-else, loops, user input | ⭐ | 60-100 |
 | Calculator | Functions, arithmetic, error handling | ⭐⭐ | 80-120 |
+| Dice Rolling | Random, lists, ASCII art, statistics | ⭐⭐ | 100-150 |
+| Word Scramble | String manipulation, lists, timer | ⭐⭐ | 100-140 |
+| Password Generator | Secrets module, security, analysis | ⭐⭐ | 120-160 |
 
 ### Intermediate Games
 | Game | Concepts | Difficulty | Est. Lines |
@@ -108,6 +129,9 @@ Play Again? → Yes: Reset State → Game Loop
 - `time` - Time-related functions
 - `json` - Data serialization (for save/load)
 - `datetime` - Date and time operations
+- `secrets` - Cryptographic random generation
+- `string` - String constants
+- `collections` - Counter for frequency analysis
 
 ### Optional External Dependencies
 - `pygame` - For Snake Game GUI
@@ -123,6 +147,9 @@ main (production)
         └── feature/number-guessing (feature)
         └── feature/rock-paper-scissors (feature)
         └── feature/calculator (feature)
+        └── feature/dice-rolling (feature)
+        └── feature/word-scramble (feature)
+        └── feature/password-generator (feature)
   └── feature/intermediate-games (development)
         └── feature/hangman (feature)
         └── feature/tic-tac-toe (feature)
@@ -148,10 +175,11 @@ main (production)
 - Verify error handling
 - Check edge cases
 
-### Automated Testing (Future)
-- Unit tests for game logic
-- Integration tests for game flow
-- Performance tests for complex games
+### Automated Testing
+- Unit tests for game logic in `tests/test_beginner_games.py`
+- Test individual functions (add, subtract, etc.)
+- Test game combinations and winner detection
+- Test password generation and strength analysis
 
 ## Deployment Options
 
@@ -162,6 +190,9 @@ python game.py
 
 # Run with specific Python version
 python3.11 game.py
+
+# Run tests
+python -m pytest tests/ -v
 ```
 
 ### Web Deployment (Future)
@@ -170,4 +201,4 @@ python3.11 game.py
 
 ### Desktop Application (Future)
 - Package with PyInstaller for standalone executables
-- Create安装ers for Windows/macOS/Linux
+- Create installers for Windows/macOS/Linux
